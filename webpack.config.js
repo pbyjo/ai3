@@ -75,7 +75,6 @@ const alias = {
 const rules = [
     babel,
     scss,
-    fonts,
     files,
     html
 ]
