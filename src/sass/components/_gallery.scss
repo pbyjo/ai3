@@ -1,0 +1,81 @@
+.gallery__item {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: $global-padding;
+    margin-bottom: $global-padding;
+    padding: 0;
+    transition: .2s;
+    cursor: pointer;
+    & > img {
+        width: 65%;
+        height: 320px;
+        object-fit: cover;
+    }
+    
+    &-info {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: $global-padding;
+        border: 1px solid $opc-color;
+        & > div {
+            display: inherit;
+            flex-direction: inherit;
+            align-items: inherit;
+            & > .price {
+                width: max-content;
+                font-family: Verdana;
+                font-size: 11px;
+                padding: 4px;
+                font-weight: 400;
+                color: $black-color;
+                background-color: #d6f3d9;
+            }
+            & > h3 {
+                font-family: Verdana;
+                font-size: 11px;
+                font-weight: 400;
+                margin-bottom: 5px;
+                background-color: $sec-color;
+                color: $white-color;
+                max-width: max-content;
+                padding: 3px;
+                @extend %font-package-didact;
+            } 
+            & > p {
+                text-align: end;
+                margin-bottom: 5px;
+                color: $black-color;
+                @extend %font-package-didact;
+                font-size: $font-s;
+                font-weight: bold;
+            }
+        }
+        & > a {
+            width: max-content;
+            & > img {
+                width: 27px;
+                height: auto;
+                cursor: pointer;
+            }
+
+            & > img:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.gallery__item:hover {
+    @extend %boxshadow-sec;
+    transform: translateY(-5px) scale(1.01);
+}
+
+.gallery__item:nth-of-type(even):hover {
+    @extend %boxshadow-third;
+}

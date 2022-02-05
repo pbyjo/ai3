@@ -1,0 +1,33 @@
+.mainContainer__slide{
+    max-width: 365px;
+    height: 220px;
+    cursor: pointer;
+}
+
+.mainContainer__slideModal{
+    max-width: 1350px;
+    aspect-ratio: 16/9;
+}
+
+.slide__mediaText {
+    & > p {
+        transition: .2s ease-out all;
+        transition-delay: .1s;
+    }
+}
+
+.mainContainer__slide:hover {
+    transform: scale(1.05);
+    opacity: .9;
+}
+
+.mainContainer__slide:hover .slide__mediaText {
+    transition: 1s;
+    background-color: rgba($color: #FFF, $alpha: .9);
+} 
+
+.mainContainer__slide:hover .slide__mediaText {
+    & > p {
+        color: $main-color;
+    }
+}

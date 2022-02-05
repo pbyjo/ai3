@@ -9,8 +9,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 \* -------------------- */
 const babel = {
     test: /\.(js|jsx)$/,
-    include: path.resolve(__dirname, 'src'),
     exclude: /node_modules/,
+    include: [
+        path.resolve(__dirname, 'src'),
+    ],
     loader: 'babel-loader',
     options: {
         presets: [
@@ -24,20 +26,72 @@ const babel = {
     }
 }
 
+const html = {
+    test: /\.html$/,
+    use: [
+        {
+            loader: 'html-loader',
+        }
+    ]
+}
+
 const scss = {
-    test: /\.css|.scss$/,
+    test: /\.css|.scss$/i,
     include: [
-        path.resolve(__dirname, 'src', 'sass')
+        path.resolve(__dirname, 'src', 'sass'),
+        path.resolve(__dirname, 'node_modules', 'leaflet', 'dist')
     ],
     use: ['style-loader', 'css-loader', 'sass-loader'],
+}
+
+const fonts = {
+    test: /\.(woff|woff2)$/i,
+    use: {
+        loader: 'url-loader',
+        options: {
+            limit: 10000,
+            mimetype: "application/font-woff",
+            name:"[name].[ext]",
+            esModule: false,
+            outputPath: "./assets/fonts",
+            publicPath: "./src/assets/fonts"
+        }
+    }
+}
+
+const files = {
+    test: /\.(png|svg|jp(e*)g|gif)$/,
+    type: 'asset'
 }
 
 /* -------------------- *\
     Reglas
 \* -------------------- */
+const alias = {
+    "@atoms": path.resolve(__dirname, 'src/atoms/'),
+    "@components": path.resolve(__dirname, 'src/components/'),
+    "@containers": path.resolve(__dirname, 'src/containers/'),
+    "@pages": path.resolve(__dirname, 'src/pages/'),
+
+    "@routes": path.resolve(__dirname, 'src/routes/'),
+    "@public": path.resolve(__dirname, 'src/public/'),
+
+    "@proyectos": path.resolve(__dirname, 'src/assets/proyectos'),
+    "@galeria": path.resolve(__dirname, 'src/assets/galeria'),
+    "@404": path.resolve(__dirname, 'src/assets/404'),
+    "@icons": path.resolve(__dirname, 'src/assets/icons/'),
+    "@logos": path.resolve(__dirname, 'src/assets/logos/'),
+    "@styles": path.resolve(__dirname, 'src/sass/'),
+    
+    "@data": path.resolve(__dirname, 'src/data/'),
+}
+
 const rules = [
     babel,
-    scss
+    scss,
+    fonts,
+    files,
+    html
 ]
 
 /* -------------------- *\
@@ -55,6 +109,11 @@ module.exports = (env, argv) => {
                 : 'bundle.js',
             path: path.resolve(__dirname, 'package'),
             publicPath: '/'
+        },
+
+        resolve: {
+            extensions: ['.js', '.jsx'],
+            alias,
         },
 
         module: {

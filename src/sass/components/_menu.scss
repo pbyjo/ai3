@@ -1,0 +1,57 @@
+.menu_nav  {
+    width: 120px;
+    position: absolute;
+    right: 0px;
+    top: 114px;
+    justify-content: flex-start;
+    height: auto;
+    background-color: rgba($color: rgb(165, 165, 165), $alpha: .1 );
+    @extend %display-flex-row;
+
+    animation: .5s transitionMenu ease-in-out alternate;
+
+        & > ul {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            & > li {
+                margin-bottom: 12px;
+            }
+            & > li:last-child {
+                margin-bottom: 0;
+            }
+        }
+    @keyframes transitionMenu {
+        from {
+            transform: translateX(20vw);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.menu_icon {
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+    top: 47px;
+    object-fit: contain;
+    cursor: pointer;
+
+    animation: zoom 1s .2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: transform;
+    @keyframes zoom {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.1);
+        }
+    }
+}

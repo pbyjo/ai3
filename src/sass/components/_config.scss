@@ -1,0 +1,41 @@
+/* ---------------- *\
+        Fonts
+\* ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&display=swap');
+
+@font-face {
+        font-family: 'CenturyGothic';
+        src: url(../assets/fonts/Verdana.woff) format('woff');
+}
+
+/* ---------------- *\
+        Variables
+\* ---------------- */
+
+$global-font: 'Zen Maru Gothic';
+
+$font-s: 12px;
+$font-m: 18px;
+$font-x: 22px; 
+
+$global-padding: 20px;
+$global-radius: 6px;
+
+$black-color: #363636;
+$white-color: #fdfffb;
+$cl-white1: #fdf7f4;
+$opc-color: #61616165;
+$main-color: #eb9b2c;
+$sec-color: rgb(238, 168, 64);
+
+
+$buy-color: #f2542d;
+
+$zi : (
+        raiz: 1000,
+        carrousel: 1010,
+        tooltip: 1020,
+        navmenu: 1030,
+        modal: 1040
+);

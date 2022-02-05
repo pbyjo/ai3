@@ -1,10 +1,8 @@
+import MyRoutes from '@routes/Routes';
 
 const App = () => {
-
     return(
-        <div className="container">
-            <h1>Funciona React!</h1>
-        </div>
+        <MyRoutes />
     )
 }
 

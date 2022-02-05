@@ -1,20 +1,88 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;  
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: whitesmoke;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    @extend %font-package-didact;
 }
 
-.container {
-    border: 1px solid rgb(187, 187, 187);
-    color: black;
-    padding: 1rem;
-    border-radius: 4px;
+header {
+    position: relative;
+    width: 280px;
+    min-height: 100vh;
+    padding: 30px;
+    border-radius: $global-radius;
+    background-color: $cl-white1;
+    animation: translate-left .8s ease-in-out;
+    z-index: 1;
+    @extend %boxshadowHeader;
+    @extend %display-flex-column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: $font-x + 5px;
+}
+
+h2 {
+    font-size: $font-x + 3px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    @extend %display-flex-row;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    list-style: circle;
+    font-size: $font-s + 2px;
+    & > a {
+        display: flex;
+        justify-content: start;
+        max-width: max-content;
+        position: relative;
+        text-decoration: none;
+        color: $black-color;
+        transition: .3s all;
+        @extend %font-package-didact;
+        font-size: $font-m - 2px;
+        &:before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $sec-color;
+            position: absolute;
+            bottom: 0px;
+            transition: .3s all;
+        }
+        &:hover:before {
+            width: 100%;
+        }
+    }
+
+    & > a:hover {
+        color: $opc-color;
+    }
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+li::selection,
+a::selection,
+div::selection {
+    color: $white-color;
+    background-color: $sec-color;
+}
+
+label {
+    color: $main-color;
 }
