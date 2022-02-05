@@ -61,10 +61,7 @@ const fonts = {
 
 const files = {
     test: /\.(png|svg|jp(e*)g|gif)$/,
-    type: 'asset',
-    generator: {
-        filename: 'assets/'
-    }
+    type: 'asset'
 }
 
 /* -------------------- *\
@@ -110,7 +107,7 @@ module.exports = (env, argv) => {
             filename: isProduction 
                 ? '[name].[contenthash].js'  
                 : 'bundle.js',
-            path: path.resolve(__dirname, 'package'),
+            path: path.resolve(__dirname, 'build'),
             publicPath: '/'
         },
 
@@ -149,14 +146,4 @@ module.exports = (env, argv) => {
 
         devtool: 'source-map'
     }
-}
-
-/* -------------------- *\
-    Conceptos !important 
-\* -------------------- */
-const notes = {
-    webpack: 'npm i --save-dev webpack webpack-cli',
-    react: 'npm i react react-dom -E (dependencias Exactas)',
-    loader: 'loader, cargador es una biblioteca o un tipo de preprocesador que transforma codigo y hará que webpack lo entienda conectandolo a la app y que finalmente llegue al navegador',
-    plugin: 'Estos añaden funcionalidad a webpack, quiero generar un archivo html'
 }
