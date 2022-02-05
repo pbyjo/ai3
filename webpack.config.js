@@ -44,24 +44,10 @@ const scss = {
     use: ['style-loader', 'css-loader', 'sass-loader'],
 }
 
-const fonts = {
-    test: /\.(woff|woff2)$/i,
-    use: {
-        loader: 'url-loader',
-        options: {
-            limit: 10000,
-            mimetype: "application/font-woff",
-            name:"[name].[ext]",
-            esModule: false,
-            outputPath: "./assets/fonts",
-            publicPath: "./src/assets/fonts"
-        }
-    }
-}
-
 const files = {
     test: /\.(png|svg|jp(e*)g|gif)$/,
-    type: 'asset'
+    type: 'asset',
+    include: path.resolve(__dirname, 'src', 'public'),
 }
 
 /* -------------------- *\
