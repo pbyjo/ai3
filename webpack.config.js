@@ -61,7 +61,10 @@ const fonts = {
 
 const files = {
     test: /\.(png|svg|jp(e*)g|gif)$/,
-    type: 'asset'
+    type: 'asset',
+    generator: {
+        filename: 'assets/images/[hash][ext][query]'
+    }
 }
 
 /* -------------------- *\
