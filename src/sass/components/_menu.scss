@@ -1,3 +1,19 @@
+.menu_icon {
+    position: absolute;
+    right: 50px;
+    top: 42px;
+    object-fit: contain;
+    padding: 3px;
+    cursor: pointer;
+
+}
+
+@media screen and(max-width: 820px) {
+    .menu_icon {
+        right: 20px;
+    }
+}
+
 .menu_nav  {
     width: 120px;
     position: absolute;
@@ -5,9 +21,9 @@
     top: 114px;
     justify-content: flex-start;
     height: auto;
-    background-color: rgba($color: rgb(165, 165, 165), $alpha: .1 );
+    z-index: 20;
+    background-color: rgba($color: rgb(238, 238, 238), $alpha: 1);
     @extend %display-flex-row;
-
     animation: .5s transitionMenu ease-in-out alternate;
 
         & > ul {
@@ -33,25 +49,61 @@
     }
 }
 
-.menu_icon {
-    margin-right: 50px;
-    position: absolute;
-    right: 0;
-    top: 47px;
-    object-fit: contain;
-    cursor: pointer;
-
-    animation: zoom 1s .2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    will-change: transform;
-    @keyframes zoom {
-        from {
-            transform: scale(1);
+@media screen and(max-width: 1651px) {
+    .menu_nav {
+        width: max-content;
+        top: 42px;
+        right: 100px;
+        border-radius: $global-radius;
+        & > ul {
+            flex-direction: row;
+            padding: 5px;
+            & > li {
+                margin: 0 10px;
+            }
         }
-        to {
-            transform: scale(1.1);
+    }
+}
+
+@media screen and(max-width: 1494px) {
+    .menu_nav {
+        top: 115px;
+        right: 20px;
+        & > ul {
+            flex-direction: column;
+            padding: 10px;
+            & > li {
+                width: max-content;
+                margin: 0 10px 5px 10px;
+                border-bottom: 1px solid rgba($color: $main-color, $alpha: .7);
+
+                & > a {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 700px) {
+    .menu_nav {
+        width: calc(100% - 20px);
+        top: 115px;
+        bottom: 10px;
+        right: 10px;
+        justify-content: center;
+        background-color: $cl-white1;
+        & > ul {
+            align-items: center;
+            & > li {
+                width: max-content;
+                margin-bottom: 11px;
+                border-bottom: 2px solid rgba($color: $main-color, $alpha: .7);
+                & > a {
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }

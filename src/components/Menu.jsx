@@ -7,6 +7,11 @@ const Menu = () => {
         <nav className="menu_nav">
             <ul>
                 <li>
+                    <Link to='/'>
+                        Home
+                    </Link>
+                </li>
+                <li>
                     <Link to='/proyectos'>
                         Portafolio
                     </Link>

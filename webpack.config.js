@@ -63,7 +63,7 @@ const files = {
     test: /\.(png|svg|jp(e*)g|gif)$/,
     type: 'asset',
     generator: {
-        filename: 'assets/images/[hash][ext][query]'
+        filename: 'assets/'
     }
 }
 

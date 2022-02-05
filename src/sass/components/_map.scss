@@ -1,9 +1,14 @@
 .leaflet__container {
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
+    min-width: 250px;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 20px 0px 0;
+}
+
+.leaflet__container:last-child {
+    margin: 0;
 }
 
 .leaflet-top {
@@ -15,9 +20,14 @@
 }
 
 .maps {
-    width: 30%;
+    width: 60%;
+    min-width: 550px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid rgba($color: $main-color, $alpha: .4);
+    border-radius: $global-radius;
 }
 
 .leaflet-bottom {

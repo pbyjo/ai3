@@ -2,12 +2,13 @@ import { useState } from 'react';
 
 import Header from '@components/Header';
 import Menu from '@components/Menu';
+import Redes from '@atoms/Redes';
 
 /* Assets */
 import menuIcon from "@icons/menu_icon.svg";
 
 const Layout = (props) => {
-    const [mainMenu, setMainMenu] = useState(true);
+    const [mainMenu, setMainMenu] = useState(false);
     const {children}= props;
 
     const handleMenu = () => {
@@ -24,6 +25,7 @@ const Layout = (props) => {
             <main className="main__container">
                 {children}
             </main>
+            <Redes />
         </>
     )
 }
