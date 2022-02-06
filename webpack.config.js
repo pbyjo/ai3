@@ -46,8 +46,10 @@ const scss = {
 
 const files = {
     test: /\.(png|svg|jp(e*)g|gif)$/,
-    type: 'asset',
-    include: path.resolve(__dirname, 'src', 'public'),
+    type: 'asset/resource',
+    generator: {
+        filename: 'assets/images/[hash][ext][query]'
+    }
 }
 
 /* -------------------- *\
@@ -122,11 +124,11 @@ module.exports = (env, argv) => {
             new MiniCssExtractPlugin({
                 filename: '[name].css'
             }),
-            new HtmlWebpackPlugin(
-                {
-                    template: './src/public/index.html'
-                }
-            )
+            new HtmlWebpackPlugin({
+                inject : true,
+                template: './src/public/index.html',
+                filename: './index.html'
+            }),
         ],
 
         devtool: 'source-map'

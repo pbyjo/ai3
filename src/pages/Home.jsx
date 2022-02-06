@@ -25,7 +25,7 @@ const Home = () => {
                     Un estudio permanente y la busqueda de la verdad.
                 </div>
             </div>
-            <Link className='home__section-ancla' to='/proyectos'>
+            <Link className='home__section-ancla' to='/portafolio'>
                 <img src={arrowIcon} alt="Arrow Icon" />
             </Link>
         </section>

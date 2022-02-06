@@ -37,7 +37,7 @@ const Equipo = () => {
         <Layout>
             <section className='equipo__section'>
                 <div className='equipo__section-head'>
-                    <h1>EQUIPO</h1>
+                    <h1>NOSOTROS</h1>
                 </div>
                 <div className='equipo__container'>
                     <div className='equipo__container-person' key={equipo[0].id}>

@@ -71,6 +71,20 @@
     }
 }
 
+@media screen and(max-width: 440px) {
+    .gallery__item {
+        margin: 0 0 10px 0;
+        & > img {
+            width: 60%;
+            height: 280px;
+        }
+
+        &-info {
+            width: 40%;
+        }
+    }
+}
+
 .gallery__item:hover {
     @extend %boxshadow-sec;
     transform: translateY(-5px) scale(1.01);

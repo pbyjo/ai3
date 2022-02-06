@@ -85,7 +85,7 @@ const MyGallery = () => {
         <Layout>
             <section className='gallery__section'>
                 <div className='gallery__section-head'>
-                    <h1>GALERIA</h1>
+                    <h1>INTERIORISMO</h1>
                 </div>
                 <div className='gallery__container'>
                 {

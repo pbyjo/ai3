@@ -12,7 +12,7 @@ const Menu = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to='/proyectos'>
+                    <Link to='/portafolio'>
                         Portafolio
                     </Link>
                 </li>
@@ -22,12 +22,12 @@ const Menu = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to='/blog'>
-                        Ideas
+                    <Link to='/articulos'>
+                        Articulos
                     </Link>
                 </li>
                 <li>
-                    <Link to='/equipo'>
+                    <Link to='/nosotros'>
                         Nosotros
                     </Link>
                 </li>

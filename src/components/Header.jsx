@@ -12,27 +12,27 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to='/proyectos'>
+                        <Link to='/portafolio'>
                             Vivienda
                         </Link>
                     </li>
                     <li>
-                        <Link to='/proyectos'>
+                        <Link to='/portafolio'>
                             Comercial
                         </Link>
                     </li>
                     <li>
-                        <Link to='/proyectos'>
+                        <Link to='/portafolio'>
                             Equipamiento
                         </Link>
                     </li>
                     <li>
-                        <Link to='/proyectos'>
+                        <Link to='/portafolio'>
                             Espacio público 
                         </Link>
                     </li>
                     <li>
-                        <Link to='/proyectos'>
+                        <Link to='/portafolio'>
                             Armonización <br /> de espacios
                         </Link>
                     </li>

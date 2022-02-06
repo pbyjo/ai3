@@ -20,10 +20,10 @@ const MyRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route exact path='/equipo' element={<Equipo />} />
+                <Route exact path='/portafolio' element={<Proyectos />} />
                 <Route exact path='/galeria' element={<MyGallery />} />
-                <Route exact path='/proyectos' element={<Proyectos />} />
-                <Route exact path='/blog' element={<Blog />} />
+                <Route exact path='/articulos' element={<Blog />} />
+                <Route exact path='/nosotros' element={<Equipo />} />
                 <Route exact path='/contacto' element={<Contacto />} />
                 <Route path="*" element={<NotFound />} />
             </Routes> 

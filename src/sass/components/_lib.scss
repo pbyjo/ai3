@@ -195,7 +195,7 @@
     }
 
     & > p {
-        max-width: 1300px;
+        max-width: 1350px;
         margin-top: 20px;
         text-align: justify;
         font-size: $font-s + 4px;
@@ -411,6 +411,14 @@
     &-person:hover {
         transform: scale(1.02);
         @extend %boxshadow;
+    }
+}
+
+@media screen and(max-width: 534px) {
+    .equipo__container {
+        &-person {
+            margin: 0 0 20px 0;
+        }
     }
 }
 

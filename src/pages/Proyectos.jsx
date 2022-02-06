@@ -30,7 +30,7 @@ const Proyectos = () => {
         <Layout>
             <section className="proyects__section">
                 <div className='proyects__section-head'>
-                        <h1>PROYECTOS</h1>
+                        <h1>PORTAFOLIO</h1>
                 </div>
                 <div className='proyects__container'>
                     {
