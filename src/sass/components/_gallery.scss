@@ -73,7 +73,8 @@
 
 @media screen and(max-width: 440px) {
     .gallery__item {
-        margin: 0 0 10px 0;
+        margin: 50px 0 10px 0;
+        height: 280px;
         & > img {
             width: 60%;
             height: 280px;
@@ -81,6 +82,7 @@
 
         &-info {
             width: 40%;
+            height: 280px;
         }
     }
 }

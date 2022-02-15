@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import arrow from '@icons/arrow_icon.svg';
 
 const Slider = (props) => {
-    const {name, multimedia, onClick, delay, containerSlideWidth} = props;
+    const {name, multimedia, onClick, delay, containerSlideWidth, videoClass} = props;
     const slideshow = useRef(null);
     const myInterval = useRef(null);
     
@@ -89,9 +89,13 @@ const Slider = (props) => {
                 {
                     multimedia.map((image, id) => (
                         <Slide key={id}>
-                            <SlideImg src={image.img} alt={name} />
+                            {
+                                image.video ?
+                                <video className={videoClass} src={image.video} muted loop autoPlay /> :
+                                <SlideImg src={image.img} />
+                            }
                             <TextoSlide className='slide__mediaText'>
-                                    <p>{name}</p>
+                                <p>{name}</p>
                             </TextoSlide>
                         </Slide>
                     ))
@@ -124,6 +128,9 @@ const ContenedorSlideShow = styled.div`
 `;
 
 const Slide = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     max-width: inherit;
     min-width: 100%;

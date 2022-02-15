@@ -22,6 +22,8 @@ import jardinImg4 from '@proyectos/iglesia_jardin/iglesiaJardin_img4.jpg'
 import jardinImg5 from '@proyectos/iglesia_jardin/iglesiaJardin_img5.jpg'
 import jardinImg6 from '@proyectos/iglesia_jardin/iglesiaJardin_img6.jpg'
 import jardinImg7 from '@proyectos/iglesia_jardin/iglesiaJardin_img7.jpg'
+import jardinVideo1 from '@proyectos/iglesia_jardin/iglesiaJardin_video1.mp4';
+import jardinVideo2 from '@proyectos/iglesia_jardin/iglesiaJardin_video2.mp4';
 
 /* 5 Iglesia Luna Park */
 import lunaParkImg1 from '@proyectos/iglesia_lunaPark/lunaPark_img1.png'
@@ -178,6 +180,12 @@ const proyectsData = [
         ),
         multimedia: [
             {
+                id: `vid${1}`,
+                video: [jardinVideo1]},
+            {
+                id: `vid${2}`,
+                video: [jardinVideo2]},
+            {
                 id: `img${0}`,
                 img: jardinImg1},
             {
@@ -197,7 +205,7 @@ const proyectsData = [
                 img: jardinImg6},
             {
                 id: `img${6}`,
-                img: jardinImg7},
+                img: jardinImg7}
         ]
     },
     {

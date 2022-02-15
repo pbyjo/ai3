@@ -43,3 +43,14 @@
         color: $black-color;
     }
 }
+
+.videoProyect {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.videoModal {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}

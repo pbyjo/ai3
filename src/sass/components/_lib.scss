@@ -225,6 +225,33 @@
     }
 }
 
+@media screen and(max-width: 1523px) {
+    .modalProyects {
+        & > div {
+            max-width: 855px;
+            min-height: max-content;
+            margin: 0
+        }
+    }
+}
+
+@media screen and(max-width: 470px) {
+    .modalProyects {
+
+        & > div {
+            padding: 30px;
+            & > h2 {
+                font-size: 1.2rem;
+            }
+
+            & > p {
+                font-size: $font-s + 3px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
 /* ------------- . ------------*/
 .proyects__section,
 .gallery__section {

@@ -52,6 +52,11 @@ const files = {
     }
 }
 
+const mp4 = {
+    test: /\.mp4$/,
+    use: 'file-loader?name=videos/[name].[ext]',
+}
+
 /* -------------------- *\
     Reglas
 \* -------------------- */
@@ -78,7 +83,8 @@ const rules = [
     babel,
     scss,
     files,
-    html
+    html,
+    mp4
 ]
 
 /* -------------------- *\
