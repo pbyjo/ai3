@@ -2,8 +2,8 @@ const blog = [
     {
         title: 'La siega',
         id: `lasiega${0}`,
-        autor: 'Joffre',
-        date: '00/00/2020',
+        autor: 'Fanny Barrero',
+        date: '12/01/2022',
         description: 'La Siega es un poema que explora la magia desde una perspectiva romantica creando asi una metafora estacional.',
         text : () => {
             return(
@@ -64,7 +64,7 @@ const blog = [
             )
         },
 
-        labels: '#poema #romanticismo #lasiega'
+        labels: '#poema #lasiega'
     },
 ]
 

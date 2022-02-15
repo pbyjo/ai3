@@ -5,8 +5,20 @@
 }
 
 .mainContainer__slideModal{
-    max-width: 1350px;
+    max-width: 854px;
+    min-width: 400px;
     aspect-ratio: 16/9;
+
+    & > div {
+        max-width: inherit;
+        aspect-ratio: inherit;
+        & > div {
+
+            & > div {
+                display: none;
+            }
+        }
+    }
 }
 
 .slide__mediaText {
@@ -28,6 +40,6 @@
 
 .mainContainer__slide:hover .slide__mediaText {
     & > p {
-        color: $main-color;
+        color: $black-color;
     }
 }

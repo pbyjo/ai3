@@ -2,16 +2,15 @@
 import instagramIcon from '@icons/instagram_icon.svg';
 
 const Desc = (props) => {
-    const {id, instagram, frase} = props
+    const {id, instagram, href} = props
     return (
         <div 
             key={id}
             className='equipo__container-person_desc'>
-            <p>{frase}</p>
-            <div>
+            <a target='_blank' href={href}>
                 <img src={instagramIcon} alt="instagram icon" />
-                <h3>{instagram}</h3> 
-            </div>
+                <p>{instagram}</p> 
+            </a>
         </div>
     )
 }

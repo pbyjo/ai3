@@ -12,28 +12,28 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to='/portafolio'>
-                            Vivienda
+                        <Link to='/proyectos'>
+                            <span>V</span>ivienda
                         </Link>
                     </li>
                     <li>
-                        <Link to='/portafolio'>
-                            Comercial
+                        <Link to='/proyectos'>
+                        <span>C</span>omercial
                         </Link>
                     </li>
                     <li>
-                        <Link to='/portafolio'>
-                            Equipamiento
+                        <Link to='/proyectos'>
+                        <span>A</span>rmonización
                         </Link>
                     </li>
                     <li>
-                        <Link to='/portafolio'>
-                            Espacio público 
+                        <Link to='/proyectos'>
+                        <span>E</span>quipamiento
                         </Link>
                     </li>
                     <li>
-                        <Link to='/portafolio'>
-                            Armonización <br /> de espacios
+                        <Link to='/proyectos'>
+                        <span>E</span>spacio público 
                         </Link>
                     </li>
                 </ul>

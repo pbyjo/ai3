@@ -1,7 +1,7 @@
 .leaflet__container {
     width: 100%;
     max-width: 300px;
-    min-width: 250px;
+    min-width: 200px;
     aspect-ratio: 1/1;
     border-radius: 100%;
     margin: 0 20px 0px 0;
@@ -26,8 +26,34 @@
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    z-index: 10;
 }
 
 .leaflet-bottom {
     display: none;
+}
+
+@media screen and(max-width: 564px) {
+    .leaflet__container {
+        width: 200px;
+    }
+
+    .leaflet-top {
+        display: none;
+    }
+
+    .leaflet-left {
+        left: none;
+    }
+}
+
+@media screen and(max-width: 450px) {
+    .maps {
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .leaflet__container {
+        margin: 0 0 20px 0;
+    }
 }

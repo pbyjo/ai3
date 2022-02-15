@@ -10,7 +10,7 @@ import Desc from '@logos/logo_capas/desc_logo.png'
 const Logo = () => {
 
     return(
-        <Link to='/' className='main__logo'>
+        <Link to='/proyectos' className='main__logo'>
             <figure className='main__logo-cont1'>
                 <img src={A} alt="Logo A" />
                 <img src={I} alt="Logo I" />

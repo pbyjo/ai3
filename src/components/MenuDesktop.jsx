@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
 
-const Menu = () => {
+const MenuDesktop = () => {
 
     return (
-        <nav className="menu_nav">
+        <nav className="menuDesktop">
             <ul>
                 <li>
                     <Link to='/interiorismo'>
@@ -31,4 +31,4 @@ const Menu = () => {
     ) 
 }
 
-export default Menu
+export default MenuDesktop;

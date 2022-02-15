@@ -2,6 +2,9 @@
 import Layout from '@containers/Layout';
 import Articulo from '../components/Articulo';
 
+/* Components */
+import MenuDesktop from '@components/MenuDesktop';
+
 /* Data */
 import dataBlog from '@data/blog.js';
 
@@ -10,10 +13,7 @@ const Blog = () => {
     return(
         <Layout>
             <section className="blog__section">
-                <div className="blog__section-head">
-                    <h1>ARTICULOS</h1>
-                </div>
-
+                <MenuDesktop />
                 <div className="blog__container">
                     {
                         dataBlog.map((article) => (

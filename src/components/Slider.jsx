@@ -5,9 +5,9 @@ import styled from 'styled-components';
 import arrow from '@icons/arrow_icon.svg';
 
 const Slider = (props) => {
-    const {name, multimedia, onClick, containerSlideWidth} = props;
+    const {name, multimedia, onClick, delay, containerSlideWidth} = props;
     const slideshow = useRef(null);
-    /* const myInterval = useRef(null); */
+    const myInterval = useRef(null);
     
     
     const next = () => {
@@ -18,7 +18,7 @@ const Slider = (props) => {
             const firstItem = slideshow.current.children[0];
 
             // Transicion
-            slideshow.current.style.transition = '.4s linear all';
+            slideshow.current.style.transition = '1.4s ease-out all';
 
             // Actions
             const sizeSlide = firstItem.offsetWidth;
@@ -55,18 +55,19 @@ const Slider = (props) => {
 
             setTimeout(() => {
                 // Transicion
-                slideshow.current.style.transition = `.4s ease-out all`;
+                slideshow.current.style.transition = `.7s ease-out all`;
                 slideshow.current.style.transform = `translateX(0px)`;
-            }, 20)
+            }, 10)
 
             slideshow.current.style.transition = 'none';
         }
     }
 
-    /* useEffect(() =>{
+    useEffect(() => {
+
         myInterval.current = setInterval(() => {
             next();
-        },delay)  
+        },delay);
 
         slideshow.current.addEventListener('mouseenter', () => {
             clearInterval(myInterval.current);
@@ -74,12 +75,13 @@ const Slider = (props) => {
 
         slideshow.current.addEventListener('mouseleave', () => {
             myInterval.current = setInterval(() => {
-                next();
-            },delay)  
+                setTimeout( () => {
+                    next();
+                }, 2000)
+            }, delay);
         });
 
-        console.log(slideshow.current);
-    }, [delay, next]); */
+    }, [delay]);
 
     return (
         <ContenedorPrincipal className={containerSlideWidth}>
@@ -107,8 +109,7 @@ const ContenedorPrincipal = styled.article`
     width: 100%;
     overflow: hidden;
     border-radius: 0;
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin: 15px;
 
     transition: .2s ease-out all;
     transition-delay: .1s;
@@ -149,29 +150,21 @@ const TextoSlide = styled.div`
     width: 100%;
     bottom: 0;
     background-color: rgba(0,0,0, .3);
-    @media screen and (max-width: 500px) {
-        position: relative;
-        padding: 4px; 
-        border: 1px solid #EEE;
-        border-radius: 7px;
-        margin-bottom: 2px;
-        background-color: rgba(0,0,0, .4);
-        color: whitesmoke;
-    }
     p {
         font-weight: 500;
-        font-size: 1rem;
+        font-size: .9rem;
         color: whitesmoke;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         @media screen and (max-width: 500px) {
-            font-size: 1rem;,
+            font-size: .8rem;
         },
     },
 `
 
 const Arrows = styled.img`
+    opacity: 0;
     position: absolute;
     width: 35px;
     height: 100%;
@@ -182,7 +175,8 @@ const Arrows = styled.img`
     z-index: 9;
     transition: .2s;
     :hover {
-        background-color: #eb9b2c;
+        background-color: rgba(255,255,255, .3);
+        opacity: 1;
     }
     :active {
         transform: scale(.9);

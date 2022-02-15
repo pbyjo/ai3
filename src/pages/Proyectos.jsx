@@ -7,6 +7,8 @@ import proyectsData from '@data/proyects.js';
 /* Contenedores */
 import Layout from '@containers/Layout'
 import ModalProyect from '@containers/ModalProyect';
+import MenuDesktop from '@components/MenuDesktop';
+
 
 const Proyectos = () => {
 
@@ -15,7 +17,6 @@ const Proyectos = () => {
     const [name, setName] = useState('')
     const [multimedia, setMultimedia] = useState('')
     const [descripcion, setDesc] = useState('')
-    const [delay, setDelay] = useState('')
     const [id, setId] = useState('') 
 
     const getAtr = (namee, multimediaa, descc, idd) => {
@@ -29,9 +30,7 @@ const Proyectos = () => {
     return(
         <Layout>
             <section className="proyects__section">
-                <div className='proyects__section-head'>
-                        <h1>PORTAFOLIO</h1>
-                </div>
+                <MenuDesktop />
                 <div className='proyects__container'>
                     {
                         proyectsData.map((proyect, id) => (
@@ -49,13 +48,17 @@ const Proyectos = () => {
                 {
                     modal && (
                         <ModalProyect modal={modal} setModal={setModal}>
+                            <div>
+                                <h2>{name}</h2>
+                                {descripcion}
+                            </div>
                             <Slider
+                                onClick={() => getAtr(name, multimedia, desc, id)}
                                 key={id}
-                                name={name}
                                 multimedia={multimedia}
+                                delay={8000}
                                 containerSlideWidth={'mainContainer__slideModal'}
                             />
-                            {descripcion}
                         </ModalProyect>
                     )
                 }

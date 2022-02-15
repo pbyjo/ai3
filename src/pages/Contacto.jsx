@@ -1,4 +1,5 @@
 /* Components */
+import MenuDesktop from '@components/MenuDesktop';
 import Maps from '@components/Maps';
 
 /* Containers */
@@ -8,9 +9,7 @@ const Contacto = () => {
     return (
         <Layout>
             <section className="contacto__section">
-                <div className="contacto__section-head">
-                    <h1>CONTACTO</h1>
-                </div>
+                <MenuDesktop />
                 <div className="contacto__container">
                     <div className="contacto__container-data">
                         <h3>Teléfono:</h3>

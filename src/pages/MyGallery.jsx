@@ -11,6 +11,9 @@ import black from '@galeria/The-black.jpg'
 /* assets */
 import buyIcon from '@icons/buy_icon.svg'
 
+/* Components */
+import MenuDesktop from '@components/MenuDesktop';
+
 /* Containers */
 import Modal from '@containers/Modal';
 import Layout from '@containers/Layout';
@@ -84,9 +87,7 @@ const MyGallery = () => {
     return (
         <Layout>
             <section className='gallery__section'>
-                <div className='gallery__section-head'>
-                    <h1>INTERIORISMO</h1>
-                </div>
+                <MenuDesktop />
                 <div className='gallery__container'>
                 {
                     imagesGallery.map((imageG, id) => (

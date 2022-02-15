@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
 
 /* assets */
-import closeIcon from '@icons/closeBlack.png';
+import closeIcon from '@icons/close.png';
 
 const Modal = (props) => {
     const {children, modal, setModal} = props 
