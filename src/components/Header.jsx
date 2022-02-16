@@ -5,10 +5,9 @@ import Logo from '@atoms/Logo';
 import Redes from '@atoms/Redes';
 
 const Header = () => {
-
     return (
         <header>
-            <Logo />
+            <Logo/>
             <nav>
                 <ul>
                     <li>
@@ -18,12 +17,12 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to='/proyectos'>
-                        <span>C</span>omercial
+                        <span>A</span>rmonización
                         </Link>
                     </li>
                     <li>
                         <Link to='/proyectos'>
-                        <span>A</span>rmonización
+                        <span>E</span>spacio público 
                         </Link>
                     </li>
                     <li>
@@ -33,12 +32,12 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to='/proyectos'>
-                        <span>E</span>spacio público 
+                        <span>C</span>omercial
                         </Link>
                     </li>
                 </ul>
             </nav>
-            <Redes />
+            <Redes/>
         </header>
     )
 };

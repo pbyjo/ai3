@@ -70,7 +70,8 @@ li {
             max-width: inherit;
             text-decoration: inherit;
             margin-right: 1px;
-            font-size: 18px;
+            font-size: 19px;
+            font-family: $sec-font;
         }
         &:before {
             content: "";
@@ -105,10 +106,6 @@ div::selection {
 
 label {
     color: $main-color;
-}
-
-span {
-    font-family: $sec-font;
 }
 
 .spanHome {

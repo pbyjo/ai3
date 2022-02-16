@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-import Logo from '@atoms/Logo'
+import LogoHome from '@atoms/LogoHome'
 
 const Home = () => {
     return (
         <section className='home__section'>
-            <Logo />
+            <LogoHome />
             <div className='home__section-container'>
                 <Link to='/proyectos'>
                     <div className='home__section-container-paragraph'>

@@ -1,5 +1,5 @@
 /* Assets */
-import instagramIcon from '@icons/instagram_icon.svg';
+import instagramIcon from '@icons/instagram_iconHeader.svg';
 import facebookIcon from '@icons/facebook_icon.svg';
 import whatsappIcon from '@icons/whatsapp_icon.svg';
 

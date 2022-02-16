@@ -7,9 +7,9 @@ import T3 from '@logos/logo_capas/3_logo.png';
 import Studio from '@logos/logo_capas/studio_logo.png'
 import Desc from '@logos/logo_capas/desc_logo.png'
 
-const Logo = () => {
+const LogoHome = () => {
     return(
-        <Link to='/' className='main__logo'>
+        <Link to='/proyectos' className='main__logo'>
             <figure className='main__logo-cont1'>
                 <img src={A} alt="Logo A" />
                 <img src={I} alt="Logo I" />
@@ -23,4 +23,4 @@ const Logo = () => {
     )
 }
 
-export default Logo;
+export default LogoHome;

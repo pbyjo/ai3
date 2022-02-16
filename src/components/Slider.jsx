@@ -9,7 +9,6 @@ const Slider = (props) => {
     const slideshow = useRef(null);
     const myInterval = useRef(null);
     
-    
     const next = () => {
         const lengthItems = slideshow.current.children.length;
         // Comprobamos que el slideshow tenga elementos
@@ -64,10 +63,12 @@ const Slider = (props) => {
     }
 
     useEffect(() => {
-
-        myInterval.current = setInterval(() => {
-            next();
-        },delay);
+        const lengthItems = slideshow.current.children.length        
+        if(lengthItems > 1) {
+            myInterval.current = setInterval(() => {
+                next();
+            },delay);
+        }
 
         slideshow.current.addEventListener('mouseenter', () => {
             clearInterval(myInterval.current);

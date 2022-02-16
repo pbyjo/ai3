@@ -2,7 +2,6 @@
 
 /* 1 Armonización de espacios */
 import armonizacionImg1 from '@proyectos/armonizacion/armonizacion_img1.jpg';
-import armonizacionImg2 from '@proyectos/armonizacion/armonizacion_img2.png';
 
 /* 2 Casa Container */
 import casaContainerImg1 from '@proyectos/casa_container/casaContainer_img1.jpg';
@@ -39,13 +38,6 @@ import palermoImg5 from '@proyectos/iglesia_palermo/ipalermo_img5.png';
 import palermoImg6 from '@proyectos/iglesia_palermo/ipalermo_img6.png';
 import palermoImg7 from '@proyectos/iglesia_palermo/ipalermo_img7.png';
 import palermoImg8 from '@proyectos/iglesia_palermo/ipalermo_img8.png';
-import palermoImg9 from '@proyectos/iglesia_palermo/ipalermo_img9.png';
-import palermoImg10 from '@proyectos/iglesia_palermo/ipalermo_img10.png';
-import palermoImg11 from '@proyectos/iglesia_palermo/ipalermo_img11.png';
-import palermoImg12 from '@proyectos/iglesia_palermo/ipalermo_img12.png';
-import palermoImg13 from '@proyectos/iglesia_palermo/ipalermo_img13.png';
-import palermoImg14 from '@proyectos/iglesia_palermo/ipalermo_img14.png';
-import palermoImg15 from '@proyectos/iglesia_palermo/ipalermo_img15.png';
 
 /* 7 Iglesia Museo contemporaneo */
 import museoArteImg1 from '@proyectos/museo_artes/museoArte_img1.jpg'
@@ -55,17 +47,24 @@ import museoArteImg4 from '@proyectos/museo_artes/museoArte_img4.jpg'
 import museoArteImg5 from '@proyectos/museo_artes/museoArte_img5.jpg'
 import museoArteImg6 from '@proyectos/museo_artes/museoArte_img6.jpg'
 import museoArteImg7 from '@proyectos/museo_artes/museoArte_img7.jpg'
+import museoArteImg8 from '@proyectos/museo_artes/museoArte_img8.jpg'
+import museoArteImg9 from '@proyectos/museo_artes/museoArte_img9.jpg'
+import museoArteImg10 from '@proyectos/museo_artes/museoArte_img10.jpg'
+import museoArteImg11 from '@proyectos/museo_artes/museoArte_img11.jpg'
 
 /* 8 Patio Fenesponal */
-import fenesponaImg1 from '@proyectos/patio_fenesponal/fenesponal_img1.png'
-import fenesponaImg2 from '@proyectos/patio_fenesponal/fenesponal_img2.png'
-import fenesponaImg3 from '@proyectos/patio_fenesponal/fenesponal_img3.png'
-import fenesponaImg4 from '@proyectos/patio_fenesponal/fenesponal_img4.png'
+import fenesponaImg1 from '@proyectos/patio_fenesponal/fenesponal_img1.jpg'
+import fenesponaImg2 from '@proyectos/patio_fenesponal/fenesponal_img2.jpg'
+import fenesponaImg3 from '@proyectos/patio_fenesponal/fenesponal_img3.jpg'
+import fenesponaImg4 from '@proyectos/patio_fenesponal/fenesponal_img4.jpg'
 import fenesponaImg5 from '@proyectos/patio_fenesponal/fenesponal_img5.jpg'
-import fenesponaImg6 from '@proyectos/patio_fenesponal/fenesponal_img6.jpg'
-import fenesponaImg7 from '@proyectos/patio_fenesponal/fenesponal_img7.jpg'
+import fenesponaImg6 from '@proyectos/patio_fenesponal/fenesponal_img6.png'
+import fenesponaImg7 from '@proyectos/patio_fenesponal/fenesponal_img7.png'
 import fenesponaImg8 from '@proyectos/patio_fenesponal/fenesponal_img8.png'
 import fenesponaImg9 from '@proyectos/patio_fenesponal/fenesponal_img9.png'
+import fenesponaImg10 from '@proyectos/patio_fenesponal/fenesponal_img10.jpg'
+import fenesponaImg11 from '@proyectos/patio_fenesponal/fenesponal_img11.jpg'
+import fenesponaImg12 from '@proyectos/patio_fenesponal/fenesponal_img12.png'
 
 /* 9 Recepción Lobby */
 import recepcionimg1 from '@proyectos/recepcion_lobby/recepcionLobby_img1.jpg'
@@ -82,91 +81,12 @@ import brazeiroImg2 from '@proyectos/restaurante_brazeiro/restauranteBrazeiro_im
 import brazeiroImg3 from '@proyectos/restaurante_brazeiro/restauranteBrazeiro_img3.jpg'
 import brazeiroImg4 from '@proyectos/restaurante_brazeiro/restauranteBrazeiro_img4.jpg'
 import brazeiroImg5 from '@proyectos/restaurante_brazeiro/restauranteBrazeiro_img5.jpg'
+import brazeiroImg6 from '@proyectos/restaurante_brazeiro/restauranteBrazeiro_img6.jpg'
 
 /*---- Proyects ----*/
 const proyectsData = [
-    {   
+    {
         id: 0,
-        delay: 7000,
-        name: 'Armonización de espacios',
-        ruta: '/armonizacion_espacios',
-        desc: () => (
-            <p>
-                "Vaastu" es una palabra sáscrita que significa vivienda y "shastra” ciencia. 
-                palabra compuesta nacida de la India y que al enlazarla forma el vasstu sastra, 
-                mencionando una disciplina en donde su eje fundamental es la arquitectura.
-                <br /><br />
-                Es así como esta disciplina incorpora en los espacios una armonización que cuenta 
-                con la ubicación del sol, los puntos cardinales, los elementos naturales y un gran 
-                número de elementos decorativos que permiten a la vivienda y al espacio habitacional 
-                arte, diseño, geometría y espacialidad.
-            </p>
-        ),
-        multimedia: [
-            {
-                id: `img${0}`,
-                img: armonizacionImg1,
-            },
-            {
-                id: `img${1}`,
-                img: armonizacionImg2,
-            }
-        ]
-    },
-    {   
-        id: 1,
-        delay: 10000,
-        name: 'Casa Container',
-        ruta: '/casa_container',
-        desc: () => (
-            <p>
-                Casa container es un proyecto pensado en el uso de contenedores para la habitabilidad 
-                de una familia pequeña cansada de la cotidianidad de la ciudad y de la arquitectura de 
-                los apartamentos actuales. Esta vivienda se sitúa en los alrededores de la ciudad de Bogotá 
-                y su plan arquitectónico se fundamenta en lo necesario para vivir y las necesidades 
-                específicas del cliente.
-            </p>
-        ),
-        multimedia: [
-            {
-                id: `img${0}`,
-                img: casaContainerImg1},
-            {
-                id: `img${1}`,
-                img: casaContainerImg2},
-            {
-                id: `img${2}`,
-                img: casaContainerImg3}
-        ]
-    },
-    {
-        id: 2,
-        delay: 12350,
-        name: 'Iglesia Yeled',
-        ruta: '/iglesia-yeled',
-        desc: () => (
-            <p>
-                Yeled es un proyecto ubicado en la ciudad de Ibagué departamento del Tolima. 
-                esta implantación se diseña con la misión primera de que el ciudadano sea la 
-                parte fundamental de su funcionamiento. La propuesta cuenta con espacios diferentes 
-                de culto, como área de atención médica, servicio a la comunidad, ambiente de distracción, 
-                oficinas y punto de encuentro dentro del barrio.
-            </p>
-        ),
-        multimedia: [
-            {
-                id: `restaurante_b-${0}`,
-                img: yeledImg1},
-            {
-                id: `restaurante_b-${1}`,
-                img: yeledImg2},
-            {
-                id: `restaurante_b-${2}`,
-                img: yeledImg3}
-        ]
-    },
-    {
-        id: 3,
         delay: 15700,
         name: 'Iglesia Jardin',
         ruta: '/inglesia_jardin',
@@ -209,43 +129,7 @@ const proyectsData = [
         ]
     },
     {
-        id: 4,
-        delay: 27000,
-        name: 'Iglesia Luna Park',
-        ruta: '/inglesia_luna-park',
-        desc: () => (
-            <p>
-                Los espacios ocupados normalmente cambian de uso con el tiempo, 
-                este proyecto requería de una distribución de las áreas internas 
-                con el objetivo de lograr una óptima sensación en los espacios 
-                internos, para tal caso fue necesario plantear tres factores. 
-                <br /><br />
-                a). interacción de las personas con las áreas a ocupar 
-                <br />
-                b). Distribución de las áreas 
-                <br />
-                c). iluminación dentro del nuevo diseño.  
-                <br /><br />
-                El diseño final permite recuperar la iluminación natural de las 
-                ventanas y generar con ello, amplitud y los demás beneficios propios 
-                de esta en la arquitectura.
-
-            </p>
-        ),
-        multimedia: [
-            {
-                id: `img${0}`,
-                img: lunaParkImg1},
-            {
-                id: `img${1}`,
-                img: lunaParkImg2},
-            {
-                id: `img${2}`,
-                img: lunaParkImg3},
-        ]
-    },
-    {
-        id: 5,
+        id: 1,
         delay: 4500,
         name: 'Iglesia Palermo',
         ruta: '/inglesia_palermo',
@@ -283,72 +167,46 @@ const proyectsData = [
             {
                 id: `img${7}`,
                 img: palermoImg8},
-            {
-                id: `img${8}`,
-                img: palermoImg9},
-            {
-                id: `img${9}`,
-                img: palermoImg10},
-            {
-                id: `img${10}`,
-                img: palermoImg11},
-            {
-                id: `img${11}`,
-                img: palermoImg12},
-            {
-                id: `img${12}`,
-                img: palermoImg13},
-            {
-                id: `img${13}`,
-                img: palermoImg14},
-            {
-                id: `img${14}`,
-                img: palermoImg15},
         ]
     },
     {
-        id: 6,
-        delay: 39000,
-        name: 'Museo de Artes Contemporaneas',
-        ruta: '/museo_artes',
+        id: 2,
+        delay: 27000,
+        name: 'Iglesia Luna Park',
+        ruta: '/inglesia_luna-park',
         desc: () => (
             <p>
-                Dentro de la arquitectura definir lo que es bello y lo que no lo es dependerá 
-                de cada punto de vista del observador, lo que para una persona puede ser 
-                absolutamente bello, para otro no lo será y no despertará algún interés, sin embargo, 
-                existe el sentido del buen gusto, y es este el que permite definir la belleza arquitectónica.
-                <br /> <br />
-                El sentido del buen gusto depender entonces de la cultura, educación y entorno, 
-                para ello es necesario el diseño y la creación de espacios que permitan a la 
-                comunidad encontrarse con el arte.
+                Los espacios ocupados normalmente cambian de uso con el tiempo, 
+                este proyecto requería de una distribución de las áreas internas 
+                con el objetivo de lograr una óptima sensación en los espacios 
+                internos, para tal caso fue necesario plantear tres factores. 
+                <br /><br />
+                a). interacción de las personas con las áreas a ocupar 
+                <br />
+                b). Distribución de las áreas 
+                <br />
+                c). iluminación dentro del nuevo diseño.  
+                <br /><br />
+                El diseño final permite recuperar la iluminación natural de las 
+                ventanas y generar con ello, amplitud y los demás beneficios propios 
+                de esta en la arquitectura.
+
             </p>
         ),
         multimedia: [
             {
-                id: `museoArte${0}`,
-                img: museoArteImg1},
+                id: `img${0}`,
+                img: lunaParkImg1},
             {
-                id: `museoArte${1}`,
-                img: museoArteImg2},
+                id: `img${1}`,
+                img: lunaParkImg2},
             {
-                id: `museoArte${2}`,
-                img: museoArteImg3},
-            {
-                id: `museoArte${3}`,
-                img: museoArteImg4},
-            {
-                id: `museoArte${4}`,
-                img: museoArteImg5},
-            {
-                id: `museoArte${5}`,
-                img: museoArteImg6},
-            {
-                id: `museoArte${6}`,
-                img: museoArteImg7},
+                id: `img${2}`,
+                img: lunaParkImg3},
         ]
     },
     {
-        id: 7,
+        id: 3,
         delay: 16800,
         name: 'Patio Fenesponal',
         ruta: '/patio_fenesponal',
@@ -401,18 +259,83 @@ const proyectsData = [
             {   
                 id: `patio_Fenesponal-${8}`,
                 img: fenesponaImg9
+            },
+            {   
+                id: `patio_Fenesponal-${8}`,
+                img: fenesponaImg10
+            },
+            {   
+                id: `patio_Fenesponal-${8}`,
+                img: fenesponaImg11
+            },
+            {   
+                id: `patio_Fenesponal-${8}`,
+                img: fenesponaImg12
             }
         ] 
     },
     {
-        id: 8,
+        id: 4,
+        delay: 39000,
+        name: 'Museo de Artes Contemporaneas',
+        ruta: '/museo_artes',
+        desc: () => (
+            <p>
+                Dentro de la arquitectura definir lo que es bello y lo que no lo es dependerá 
+                de cada punto de vista del observador, lo que para una persona puede ser 
+                absolutamente bello, para otro no lo será y no despertará algún interés, sin embargo, 
+                existe el sentido del buen gusto, y es este el que permite definir la belleza arquitectónica.
+                <br /> <br />
+                El sentido del buen gusto depender entonces de la cultura, educación y entorno, 
+                para ello es necesario el diseño y la creación de espacios que permitan a la 
+                comunidad encontrarse con el arte.
+            </p>
+        ),
+        multimedia: [
+            {
+                id: `museoArte${0}`,
+                img: museoArteImg1},
+            {
+                id: `museoArte${1}`,
+                img: museoArteImg2},
+            {
+                id: `museoArte${2}`,
+                img: museoArteImg3},
+            {
+                id: `museoArte${3}`,
+                img: museoArteImg4},
+            {
+                id: `museoArte${4}`,
+                img: museoArteImg5},
+            {
+                id: `museoArte${5}`,
+                img: museoArteImg6},
+            {
+                id: `museoArte${6}`,
+                img: museoArteImg7},
+            {
+                id: `museoArte${7}`,
+                img: museoArteImg8},
+            {
+                id: `museoArte${8}`,
+                img: museoArteImg9},
+            {
+                id: `museoArte${9}`,
+                img: museoArteImg10},
+            {
+                id: `museoArte${10}`,
+                img: museoArteImg11},
+        ]
+    },
+    {
+        id: 5,
         delay: 22680,
         name: 'Recepción Lobby',
         ruta: '/recepcion-lobby',
         desc: () => (
             <p>
                 La entrada desde el exterior de este proyecto se planteó con una sencilla 
-                división para disminuir el ruido e independizar las reas de acuerdo con su 
+                división para disminuir el ruido e independizar las áreas de acuerdo con su 
                 orden de uso e importancia, así nació esta idea, donde la división arquitectónica 
                 con un detalle único en madera logra separar el   espacio de lobby de un área privada 
                 en la que el sonido y la estética del módulo, tendrían gran importancia en el diseño.
@@ -443,7 +366,59 @@ const proyectsData = [
         ] 
     },
     {
-        id: 9,
+        id: 6,
+        delay: 12350,
+        name: 'Iglesia Yeled',
+        ruta: '/iglesia-yeled',
+        desc: () => (
+            <p>
+                Yeled es un proyecto ubicado en la ciudad de Ibagué departamento del Tolima. 
+                esta implantación se diseña con la misión primera de que el ciudadano sea la 
+                parte fundamental de su funcionamiento. La propuesta cuenta con espacios diferentes 
+                de culto, como área de atención médica, servicio a la comunidad, ambiente de distracción, 
+                oficinas y punto de encuentro dentro del barrio.
+            </p>
+        ),
+        multimedia: [
+            {
+                id: `restaurante_b-${0}`,
+                img: yeledImg1},
+            {
+                id: `restaurante_b-${1}`,
+                img: yeledImg2},
+            {
+                id: `restaurante_b-${2}`,
+                img: yeledImg3}
+        ]
+    },
+    {   
+        id: 7,
+        delay: 10000,
+        name: 'Casa Container',
+        ruta: '/casa_container',
+        desc: () => (
+            <p>
+                Casa container es un proyecto pensado en el uso de contenedores para la habitabilidad 
+                de una familia pequeña cansada de la cotidianidad de la ciudad y de la arquitectura de 
+                los apartamentos actuales. Esta vivienda se sitúa en los alrededores de la ciudad de Bogotá 
+                y su plan arquitectónico se fundamenta en lo necesario para vivir y las necesidades 
+                específicas del cliente.
+            </p>
+        ),
+        multimedia: [
+            {
+                id: `img${0}`,
+                img: casaContainerImg1},
+            {
+                id: `img${1}`,
+                img: casaContainerImg2},
+            {
+                id: `img${2}`,
+                img: casaContainerImg3}
+        ]
+    },
+    {
+        id: 8,
         delay: 32050,
         name: 'Restaurante Brazeiro',
         ruta: '/restaurante-brazeiro',
@@ -471,9 +446,36 @@ const proyectsData = [
                 img: brazeiroImg4},
             {
                 id: `restaurante_b-${4}`,
-                img: brazeiroImg5}
+                img: brazeiroImg5},
+            {
+                id: `restaurante_b-${5}`,
+                img: brazeiroImg6}
         ]
-    }
+    },
+    {   
+        id: 9,
+        delay: 7000,
+        name: 'Armonización de espacios',
+        ruta: '/armonizacion_espacios',
+        desc: () => (
+            <p>
+                "Vaastu" es una palabra sáscrita que significa vivienda y "shastra” ciencia. 
+                palabra compuesta nacida de la India y que al enlazarla forma el vasstu sastra, 
+                mencionando una disciplina en donde su eje fundamental es la arquitectura.
+                <br /><br />
+                Es así como esta disciplina incorpora en los espacios una armonización que cuenta 
+                con la ubicación del sol, los puntos cardinales, los elementos naturales y un gran 
+                número de elementos decorativos que permiten a la vivienda y al espacio habitacional 
+                arte, diseño, geometría y espacialidad.
+            </p>
+        ),
+        multimedia: [
+            {
+                id: `img${0}`,
+                img: armonizacionImg1,
+            },
+        ]
+    },
 ]
 
 export default proyectsData;
