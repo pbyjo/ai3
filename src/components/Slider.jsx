@@ -95,9 +95,9 @@ const Slider = (props) => {
                                 <video className={videoClass} src={image.video} muted loop autoPlay /> :
                                 <SlideImg src={image.img} />
                             }
-                            <TextoSlide className='slide__mediaText'>
+                            {/* <TextoSlide className='slide__mediaText'>
                                 <p>{name}</p>
-                            </TextoSlide>
+                            </TextoSlide> */}
                         </Slide>
                     ))
                 }
@@ -152,7 +152,7 @@ const SlideImg = styled.img`
     border-radius: inherit;
 `
 
-const TextoSlide = styled.div`
+/* const TextoSlide = styled.div`
     position: absolute;
     padding: 8px;
     width: 100%;
@@ -169,7 +169,7 @@ const TextoSlide = styled.div`
             font-size: .8rem;
         },
     },
-`
+` */
 
 const Arrows = styled.img`
     opacity: 0;

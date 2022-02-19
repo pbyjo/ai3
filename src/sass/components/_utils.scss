@@ -34,12 +34,12 @@
 
 /* Scrollbar */
 %scrollbar-firefox {
-    scrollbar-color: $black-color rgba(0, 0, 0, 0);
+    scrollbar-color: $opc-color rgba(0, 0, 0, 0);
     scrollbar-width: none;
 }
 
 %scrollbar-firefox-visible {
-    scrollbar-color: $black-color rgba(0, 0, 0, 0);
+    scrollbar-color: $opc-color rgba(0, 0, 0, 0);
     scrollbar-width: thin;
 }
 

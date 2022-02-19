@@ -54,6 +54,9 @@
                     animation-direction: alternate;
                     will-change: transform, opacity;
                 }
+                & > li:first-child {
+                    margin-left: 20px;
+                }
             }
             & > label {
                 cursor: pointer;

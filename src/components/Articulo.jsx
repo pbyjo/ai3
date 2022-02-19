@@ -41,7 +41,7 @@ const Articulo = (props) => {
                     <p>
                         <img src={calendarIcon} alt="calendar icon" />
                         {date}</p>
-                    <a href="https://www.instagram.com" target='_blank'> {`@${autor}`} </a>
+                    <a href="https://www.facebook.com/fanny.barrero.5" target='_blank'> {`@${autor}`} </a>
                     <label htmlFor=""> {labels} </label>
                 </div>
             </article>

@@ -13,8 +13,15 @@ const equipo = [
         profesion: 'Psicóloga',
         instagram: '@lauri_sando',
         href: 'https://www.instagram.com/lauri_sando/',
-        frase: '“La felicidad no es exuberante ni bulliciosa, como el placer o la alegría. Es silenciosa, tranquila, suave, es un estado\
-                interno de satisfacción que empieza por amarse así mismo.” Isabell Allende'
+        frase: '“El miedo es inevitable, tengo que aceptar eso, pero no puedo permitir que me paralice.” Isabell Allende'
+    },
+    {
+        id: `eber-e88vy73m`,
+        nombre: 'Eber Boset Botello',
+        profesion: 'Diseñador / Arquitecto',
+        instagram: '@ebtocora',  
+        href: 'https://www.instagram.com/ebtocora/',      
+        frase: '“Intento dar a la gente una forma diferente de ver su entorno. Eso es arte para mi” Maya Lin'
     },
     {
         id: `mario-i0bsf25r`,
@@ -31,14 +38,6 @@ const equipo = [
         instagram: '@aperea_art',
         href: 'https://www.instagram.com/aperea_art/',
         frase: '“A través del arte se puede viajar a un mundo mágico y al mismo tiempo liberar el alma” autor'
-    },
-    {
-        id: `eber-e88vy73m`,
-        nombre: 'Eber Boset Botello',
-        profesion: 'Diseñador / Arquitecto',
-        instagram: '@ebtocora',  
-        href: 'https://www.instagram.com/ebtocora/',      
-        frase: '“Intento dar a la gente una forma diferente de ver su entorno. Eso es arte para mi” Maya Lin'
     }
 ]
 

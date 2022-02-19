@@ -2,6 +2,7 @@
 
 /* 1 Armonización de espacios */
 import armonizacionImg1 from '@proyectos/armonizacion/armonizacion_img1.jpg';
+import armonizacionImg2 from '@proyectos/armonizacion/armonizacion_img2.jpg';
 
 /* 2 Casa Container */
 import casaContainerImg1 from '@proyectos/casa_container/casaContainer_img1.jpg';
@@ -49,22 +50,18 @@ import museoArteImg6 from '@proyectos/museo_artes/museoArte_img6.jpg'
 import museoArteImg7 from '@proyectos/museo_artes/museoArte_img7.jpg'
 import museoArteImg8 from '@proyectos/museo_artes/museoArte_img8.jpg'
 import museoArteImg9 from '@proyectos/museo_artes/museoArte_img9.jpg'
-import museoArteImg10 from '@proyectos/museo_artes/museoArte_img10.jpg'
-import museoArteImg11 from '@proyectos/museo_artes/museoArte_img11.jpg'
 
 /* 8 Patio Fenesponal */
 import fenesponaImg1 from '@proyectos/patio_fenesponal/fenesponal_img1.jpg'
 import fenesponaImg2 from '@proyectos/patio_fenesponal/fenesponal_img2.jpg'
 import fenesponaImg3 from '@proyectos/patio_fenesponal/fenesponal_img3.jpg'
 import fenesponaImg4 from '@proyectos/patio_fenesponal/fenesponal_img4.jpg'
-import fenesponaImg5 from '@proyectos/patio_fenesponal/fenesponal_img5.jpg'
+import fenesponaImg5 from '@proyectos/patio_fenesponal/fenesponal_img5.png'
 import fenesponaImg6 from '@proyectos/patio_fenesponal/fenesponal_img6.png'
 import fenesponaImg7 from '@proyectos/patio_fenesponal/fenesponal_img7.png'
 import fenesponaImg8 from '@proyectos/patio_fenesponal/fenesponal_img8.png'
 import fenesponaImg9 from '@proyectos/patio_fenesponal/fenesponal_img9.png'
 import fenesponaImg10 from '@proyectos/patio_fenesponal/fenesponal_img10.jpg'
-import fenesponaImg11 from '@proyectos/patio_fenesponal/fenesponal_img11.jpg'
-import fenesponaImg12 from '@proyectos/patio_fenesponal/fenesponal_img12.png'
 
 /* 9 Recepción Lobby */
 import recepcionimg1 from '@proyectos/recepcion_lobby/recepcionLobby_img1.jpg'
@@ -73,7 +70,6 @@ import recepcionimg3 from '@proyectos/recepcion_lobby/recepcionLobby_img3.jpg'
 import recepcionimg4 from '@proyectos/recepcion_lobby/recepcionLobby_img4.jpg'
 import recepcionimg5 from '@proyectos/recepcion_lobby/recepcionLobby_img5.jpg'
 import recepcionimg6 from '@proyectos/recepcion_lobby/recepcionLobby_img6.jpg'
-import recepcionimg7 from '@proyectos/recepcion_lobby/recepcionLobby_img7.jpg'
 
 /* 10 Restaurante Brazeiro */
 import brazeiroImg1 from '@proyectos/restaurante_brazeiro/restauranteBrazeiro_img1.jpg'
@@ -135,11 +131,11 @@ const proyectsData = [
         ruta: '/inglesia_palermo',
         desc: () => (
             <p>
-                La propuesta se fundamenta en el cambio de imagen de la una Iglesia que recoge 
-                a una gran parte de sus feligreses en centro de la ciudad, el diseño se fundamenta 
-                en la comunión entre un auditorio y un templo, contemplando factores de diseño como 
-                amplitud del escenario, elementos acústicos, decorativos en madera y cambio de 
-                estructura existente.
+                La propuesta se fundamenta en un cambio de imagen para una iglesia que recibe una gran parte de 
+                sus feligreses en la zona concentrica de la ciudad, la propuesta se plantea como objetivo lograr
+                una relación entre lo que se considera un auditorio y un templo, para tal caso los factores de 
+                diseño como amplitud del escenario, elementos acústicos, armonización del lugar y cambio de 
+                estructura existente seran para este espacio una partida interesante a diseñar.
             </p>
         ),
         multimedia: [
@@ -176,21 +172,8 @@ const proyectsData = [
         ruta: '/inglesia_luna-park',
         desc: () => (
             <p>
-                Los espacios ocupados normalmente cambian de uso con el tiempo, 
-                este proyecto requería de una distribución de las áreas internas 
-                con el objetivo de lograr una óptima sensación en los espacios 
-                internos, para tal caso fue necesario plantear tres factores. 
-                <br /><br />
-                a). interacción de las personas con las áreas a ocupar 
-                <br />
-                b). Distribución de las áreas 
-                <br />
-                c). iluminación dentro del nuevo diseño.  
-                <br /><br />
-                El diseño final permite recuperar la iluminación natural de las 
-                ventanas y generar con ello, amplitud y los demás beneficios propios 
-                de esta en la arquitectura.
-
+                El diseño final permite recuperar la iluminación natural por medio de las ventanas, ganando junto con
+                los demás factores planteados en este diseño, una sensación de confort y amplitud.
             </p>
         ),
         multimedia: [
@@ -208,8 +191,8 @@ const proyectsData = [
     {
         id: 3,
         delay: 16800,
-        name: 'Patio Fenesponal',
-        ruta: '/patio_fenesponal',
+        name: 'Patio terraza',
+        ruta: '/patio_terraza',
         desc: () => (
             <p>
                 Esta remodelación permite entender que las exigencias del cliente deben ser entendidas 
@@ -225,52 +208,44 @@ const proyectsData = [
         ),
         multimedia: [
             {   
-                id: `patio_Fenesponal-${0}`,
+                id: `patio_terraza-${0}`,
                 img: fenesponaImg1
             },
             {   
-                id: `patio_Fenesponal-${1}`,
+                id: `patio_terraza-${1}`,
                 img: fenesponaImg2
             },
             {   
-                id: `patio_Fenesponal-${2}`,
+                id: `patio_terraza-${2}`,
                 img: fenesponaImg3
             },
             {   
-                id: `patio_Fenesponal-${3}`,
+                id: `patio_terraza-${3}`,
                 img: fenesponaImg4
             },
             {   
-                id: `patio_Fenesponal-${4}`,
+                id: `patio_terraza-${4}`,
                 img: fenesponaImg5
             },
             {   
-                id: `patio_Fenesponal-${5}`,
+                id: `patio_terraza-${5}`,
                 img: fenesponaImg6
             },
             {   
-                id: `patio_Fenesponal-${6}`,
+                id: `patio_terraza-${6}`,
                 img: fenesponaImg7
             },
             {   
-                id: `patio_Fenesponal-${7}`,
+                id: `patio_terraza-${7}`,
                 img: fenesponaImg8
             },
             {   
-                id: `patio_Fenesponal-${8}`,
+                id: `patio_terraza-${8}`,
                 img: fenesponaImg9
             },
             {   
-                id: `patio_Fenesponal-${8}`,
+                id: `patio_terraza-${8}`,
                 img: fenesponaImg10
-            },
-            {   
-                id: `patio_Fenesponal-${8}`,
-                img: fenesponaImg11
-            },
-            {   
-                id: `patio_Fenesponal-${8}`,
-                img: fenesponaImg12
             }
         ] 
     },
@@ -286,9 +261,9 @@ const proyectsData = [
                 absolutamente bello, para otro no lo será y no despertará algún interés, sin embargo, 
                 existe el sentido del buen gusto, y es este el que permite definir la belleza arquitectónica.
                 <br /> <br />
-                El sentido del buen gusto depender entonces de la cultura, educación y entorno, 
-                para ello es necesario el diseño y la creación de espacios que permitan a la 
-                comunidad encontrarse con el arte.
+                El sentido del buen gusto dependerá entonces de la cultura, educación y el entorno. Una de las 
+                maneras que permite recortar esta brecha es con el buen diseño y la creación de espacios que 
+                permitan a la comunidad encontrarse con ellas mismas y con el arte.
             </p>
         ),
         multimedia: [
@@ -318,13 +293,7 @@ const proyectsData = [
                 img: museoArteImg8},
             {
                 id: `museoArte${8}`,
-                img: museoArteImg9},
-            {
-                id: `museoArte${9}`,
-                img: museoArteImg10},
-            {
-                id: `museoArte${10}`,
-                img: museoArteImg11},
+                img: museoArteImg9}
         ]
     },
     {
@@ -360,9 +329,6 @@ const proyectsData = [
             {
                 id: `recepcion_lobby-${5}`,
                 img: recepcionimg6},
-            {
-                id: `recepcion_lobby-${6}`,
-                img: recepcionimg7},
         ] 
     },
     {
@@ -426,9 +392,8 @@ const proyectsData = [
             <p>
                 Remodelación de restaurante Brazeiro ubicado en la ciudad de Bogotá D.C
                 Centro comercial el Edén, es un proyecto en donde se construyó un espacio 
-                adecuado para área de cocina bodega, cuartos fríos, mezanine, área de restaurante y terraza.  
-                El proyecto conto con norma de higiene alimentaria, certificación Retie y diseños estructurales.
-
+                adecuado para área de cocina, bodega, cuartos fríos, mezanine, área de restaurante y terraza.  
+                En el proyecto se implementó norma de higiene alimentaria, certificación Retie y diseños estructurales.
             </p>
         ),
         multimedia: [
@@ -466,13 +431,17 @@ const proyectsData = [
                 Es así como esta disciplina incorpora en los espacios una armonización que cuenta 
                 con la ubicación del sol, los puntos cardinales, los elementos naturales y un gran 
                 número de elementos decorativos que permiten a la vivienda y al espacio habitacional 
-                arte, diseño, geometría y espacialidad.
+                tener arte, diseño, geometría y espacialidad.
             </p>
         ),
         multimedia: [
             {
                 id: `img${0}`,
                 img: armonizacionImg1,
+            },
+            {
+                id: `img${1}`,
+                img: armonizacionImg2,
             },
         ]
     },

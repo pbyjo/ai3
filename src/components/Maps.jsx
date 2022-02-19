@@ -13,7 +13,7 @@ const Maps = () => {
             />
             </MapContainer>
             
-            <MapContainer className='leaflet__container' center={{lat: '4.4148895', lng: '-74.3976621'}} zoom={13}>
+            <MapContainer className='leaflet__container' center={{lat: '4.401313', lng: '-74.3906612'}} zoom={14}>
                 <TileLayer 
                     url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
