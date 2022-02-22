@@ -54,7 +54,6 @@ import museoArteImg9 from '@proyectos/museo_artes/museoArte_img9.jpg'
 /* 8 Patio Fenesponal */
 import fenesponaImg1 from '@proyectos/patio_fenesponal/fenesponal_img1.jpg'
 import fenesponaImg2 from '@proyectos/patio_fenesponal/fenesponal_img2.jpg'
-import fenesponaImg3 from '@proyectos/patio_fenesponal/fenesponal_img3.jpg'
 import fenesponaImg4 from '@proyectos/patio_fenesponal/fenesponal_img4.jpg'
 import fenesponaImg5 from '@proyectos/patio_fenesponal/fenesponal_img5.png'
 import fenesponaImg6 from '@proyectos/patio_fenesponal/fenesponal_img6.png'
@@ -172,6 +171,14 @@ const proyectsData = [
         ruta: '/inglesia_luna-park',
         desc: () => (
             <p>
+                Los espacios ocupados normalmente cambian de uso con el tiempo, este proyecto requería de una distribución 
+                de las áreas internas con el objetivo de lograr una óptima sensación en los espacios internos, para tal caso 
+                fue necesario plantear tres factores.
+                <br/><br/>
+                a). Interacción de las personas con las áreas a ocupar.<br/>
+                b). Distribución de las áreas.<br/>
+                c). Iluminación dentro del nuevo diseño.<br/>
+                <br/>
                 El diseño final permite recuperar la iluminación natural por medio de las ventanas, ganando junto con
                 los demás factores planteados en este diseño, una sensación de confort y amplitud.
             </p>
@@ -214,10 +221,6 @@ const proyectsData = [
             {   
                 id: `patio_terraza-${1}`,
                 img: fenesponaImg2
-            },
-            {   
-                id: `patio_terraza-${2}`,
-                img: fenesponaImg3
             },
             {   
                 id: `patio_terraza-${3}`,
