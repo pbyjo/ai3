@@ -15,7 +15,7 @@
         position: relative;
         & > img {
             position: absolute;
-            width: 12px;
+            width: 18px;
 
             opacity: 0;
             animation-name: introOp;
@@ -27,47 +27,47 @@
         }
         & > img:first-child {
             top: 20px;
-            left: 14%;
+            left: 15%;
         }
         & > img:nth-child(2) {
             top: 20px;
-            left: 41%;
+            left: 39%;
             animation-delay: .9s;
         }
         & > img:nth-child(3) {
             top: 20px;
-            left: 67%;
+            left: 59%;
             animation-delay: 1.2s;
         }
         & > img:nth-child(4) {
             top: 20px;
-            left: 76%;
+            left: 72%;
             animation-delay: .7s;
         }
         & > img:nth-child(5) {
             top: 20px;
-            left: 83%;
+            left: 79%;
             animation-delay: 1.8s;
         }
 
         & > img:nth-child(6) {
-            top: 50px;
-            left: 33.5%;
+            top: 40px;
+            left: 32%;
             animation-delay: 2s;
         }
         & > img:nth-child(7) {
-            top: 50px;
-            left: 67%;
+            top: 40px;
+            left: 59%;
             animation-delay: 1.4s;
         }
         & > img:nth-child(8) {
-            top: 80px;
-            left: 67%;
+            top: 60px;
+            left: 59%;
             animation-delay: 1.1s;
         }
         & > img:nth-child(9) {
-            top: 80px;
-            left: 57%;
+            top: 60px;
+            left: 51%;
             animation-delay: .4s;
         }
     }
