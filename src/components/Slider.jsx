@@ -10,23 +10,23 @@ const Slider = (props) => {
     const myInterval = useRef(null);
     
     const next = () => {
-        const lengthItems = slideshow.current.children.length;
+        let lengthItems = slideshow.current.children.length;
         // Comprobamos que el slideshow tenga elementos
         if( lengthItems > 0) {
             // Obtenemos el primer elemento del slideshow:
             const firstItem = slideshow.current.children[0];
-
+            
             // Transicion
             slideshow.current.style.transition = '1.4s ease-out all';
 
             // Actions
             const sizeSlide = firstItem.offsetWidth;
             slideshow.current.style.transform = `translateX(-${sizeSlide}px)`;
-
+            
             const transition = () => {
                 slideshow.current.style.transition = 'none';
                 slideshow.current.style.transform = `translateX(0px)`;
-        
+                
                 // Tomamos el primer elemento y lo mandamos al final.
                 slideshow.current.appendChild(firstItem);
                 // Finalizamos la escucha de transicion 
@@ -39,7 +39,7 @@ const Slider = (props) => {
     }
 
     const back = () => {
-        const lengthItems = slideshow.current.children.length;
+        let lengthItems = slideshow.current.children.length;
         if(lengthItems > 0) {
             // Obtenemos el ultimo elemento del slideshow:
             const lastIndex = lengthItems - 1;
@@ -63,7 +63,7 @@ const Slider = (props) => {
     }
 
     useEffect(() => {
-        const lengthItems = slideshow.current.children.length        
+        let lengthItems = slideshow.current.children.length        
         if(lengthItems > 1) {
             myInterval.current = setInterval(() => {
                 next();

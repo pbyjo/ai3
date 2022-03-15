@@ -119,7 +119,7 @@
         position: relative;
         & > img {
             position: absolute;
-            width: 24px;
+            width: 20px;
             transition: 1s ease-in-out all;
 
             opacity: 0;
@@ -132,42 +132,42 @@
         }
         & > img:first-child {
             top: 20px;
-            left: 12%;
+            left: 21%;
         }
         & > img:nth-child(2) {
             top: 20px;
-            left: 39%;
+            left: 41%;
             animation-delay: .9s;
         }
         & > img:nth-child(3) {
             top: 20px;
-            left: 59%;
+            left: 57%;
             animation-delay: 1.2s;
         }
         & > img:nth-child(4) {
             top: 20px;
-            left: 70%;
+            left: 68%;
             animation-delay: .7s;
         }
         & > img:nth-child(5) {
             top: 20px;
-            left: 78%;
+            left: 74%;
             animation-delay: 1.8s;
         }
 
         & > img:nth-child(6) {
             top: 45px;
-            left: 32%;
+            left: 34%;
             animation-delay: 1s;
         }
         & > img:nth-child(7) {
             top: 45px;
-            left: 59%;
+            left: 57%;
             animation-delay: 2s;
         }
         & > img:nth-child(8) {
             top: 70px;
-            left: 59%;
+            left: 57%;
             animation-delay: 1.9s;
         }
         & > img:nth-child(9) {
@@ -178,12 +178,12 @@
     }
     &-cont2 {
         width: 100%;
-        height: 50%;
+        height: 40%;
         @extend %display-flex-column;
         justify-content: center;
         & > img {
             width: 100%;
-            max-width: 180px;
+            max-width: 160px;
         }
     }
 }
@@ -231,14 +231,16 @@
             width: 220px;
             height: 50%;
             & > img {
-                width: 12px;
+                width: 15px;
             }
         }
 
         &-cont2 {
             height: 50%;
+            justify-content: flex-start;
             & > img {
-                max-width: 160px;
+                margin-top: 10px;
+                max-width: 140px;
             }
         }
     }
