@@ -10,7 +10,7 @@ const Redes = () => {
             <a href="https://www.instagram.com/ai3_studio/" target='_blank'>
                 <img src={instagramIcon} alt="instagram icon" />
             </a>
-            <a href="https://www.facebook.com/" target='_blank'>
+            <a href="https://www.facebook.com/Ai3studio" target='_blank'>
                 <img src={facebookIcon} alt="facebook icon" />
             </a>
             <a href="https://api.whatsapp.com/send?phone=573155153029&text=Hola, vi su contacto en la página web y estoy interesado en..." target='_blank'>
