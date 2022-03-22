@@ -39,6 +39,9 @@ import palermoImg5 from '@proyectos/iglesia_palermo/ipalermo_img5.png';
 import palermoImg6 from '@proyectos/iglesia_palermo/ipalermo_img6.png';
 import palermoImg7 from '@proyectos/iglesia_palermo/ipalermo_img7.png';
 import palermoImg8 from '@proyectos/iglesia_palermo/ipalermo_img8.png';
+import palermoImg9 from '@proyectos/iglesia_palermo/ipalermo_img9.png';
+import palermoImg10 from '@proyectos/iglesia_palermo/ipalermo_img10.png';
+import palermoImg11 from '@proyectos/iglesia_palermo/ipalermo_img11.png';
 
 /* 7 Iglesia Museo contemporaneo */
 import museoArteImg1 from '@proyectos/museo_artes/museoArte_img1.jpg'
@@ -162,6 +165,15 @@ const proyectsData = [
             {
                 id: `img${7}`,
                 img: palermoImg8},
+            {
+                id: `img${8}`,
+                img: palermoImg9},
+            {
+                id: `img${9}`,
+                img: palermoImg10},
+            {
+                id: `img${10}`,
+                img: palermoImg11},
         ]
     },
     {

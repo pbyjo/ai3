@@ -8,10 +8,13 @@ const Modal = (props) => {
 
     const handleClick = () => {
         setModal(!modal)
+
+        const portal = document.getElementById('portal')
+        portal.classList.add('display-none')
     }
     
     return ReactDOM.createPortal(
-        <section className="modal modalProyects">
+        <section  className="modal modalProyects">
             {children}
             <img onClick={handleClick} src={closeIcon} className="modal__close" alt="close" />
         </section>,

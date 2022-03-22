@@ -1,3 +1,7 @@
+.display-none {
+    display: none;
+}
+
 .my__body {
     @extend %font-package-didact;
     @extend %display-flex-row;
@@ -194,7 +198,7 @@
 .modalProyects {
     flex-wrap: wrap;
     flex-direction: row;
-    animation: .8s opacity ease-in-out;
+    animation: .5s opacity ease-in-out;
     background-color: rgba($color: $black-color, $alpha: .95);
     padding: $global-padding;
     & > article {

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import arrow from '@icons/arrow_icon.svg';
 
 const Slider = (props) => {
-    const {name, multimedia, onClick, delay, containerSlideWidth, videoClass} = props;
+    const {multimedia, onClick, delay, containerSlideWidth, videoClass} = props;
     const slideshow = useRef(null);
     const myInterval = useRef(null);
     
@@ -17,7 +17,7 @@ const Slider = (props) => {
             const firstItem = slideshow.current.children[0];
             
             // Transicion
-            slideshow.current.style.transition = '1.4s ease-out all';
+            slideshow.current.style.transition = '1.2s ease-out all';
 
             // Actions
             const sizeSlide = firstItem.offsetWidth;
@@ -54,7 +54,7 @@ const Slider = (props) => {
 
             setTimeout(() => {
                 // Transicion
-                slideshow.current.style.transition = `.7s ease-out all`;
+                slideshow.current.style.transition = `.5s ease-out all`;
                 slideshow.current.style.transform = `translateX(0px)`;
             }, 10)
 
@@ -63,7 +63,7 @@ const Slider = (props) => {
     }
 
     useEffect(() => {
-        let lengthItems = slideshow.current.children.length        
+        let lengthItems = slideshow.current.children.length      
         if(lengthItems > 1) {
             myInterval.current = setInterval(() => {
                 next();
@@ -81,8 +81,7 @@ const Slider = (props) => {
                 }, 2000)
             }, delay);
         });
-
-    }, [delay]);
+    }, []);
 
     return (
         <ContenedorPrincipal className={containerSlideWidth}>

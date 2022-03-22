@@ -11,7 +11,6 @@ import MenuDesktop from '@components/MenuDesktop';
 
 
 const Proyectos = () => {
-
     const [modal, setModal] = useState(false)
 
     const [name, setName] = useState('')
@@ -25,7 +24,10 @@ const Proyectos = () => {
         setDesc(descc),
         setId(idd),
         setModal(!modal)
-    }
+
+        const portal = document.querySelector('#portal')
+        portal.classList.remove('display-none')
+    }  
 
     return(
         <Layout>
@@ -38,7 +40,6 @@ const Proyectos = () => {
                                 onClick={() => getAtr(proyect.name, proyect.multimedia, proyect.desc, proyect.id)}
                                 key={id} 
                                 delay={proyect.delay}
-                                name={proyect.name}
                                 multimedia={proyect.multimedia}
                                 containerSlideWidth={'mainContainer__slide'}
                                 videoClass={'videoProyect'}
@@ -50,7 +51,6 @@ const Proyectos = () => {
                     modal && (
                         <ModalProyect modal={modal} setModal={setModal}>
                             <Slider
-                                onClick={() => getAtr(name, multimedia, desc, id)}
                                 key={id}
                                 multimedia={multimedia}
                                 delay={8000}
