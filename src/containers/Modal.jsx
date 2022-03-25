@@ -8,6 +8,9 @@ const Modal = (props) => {
 
     const handleClick = () => {
         setModal(!modal)
+
+        const portal = document.getElementById('portal')
+        portal.classList.add('display-none')
     }
     
     return ReactDOM.createPortal(

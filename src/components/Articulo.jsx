@@ -22,6 +22,9 @@ const Articulo = (props) => {
         setAutor(autorr);
         setDate(datee);
         setText(textt);
+
+        const portal = document.querySelector('#portal')
+        portal.classList.remove('display-none')
     }
 
     const handleClick = () => {

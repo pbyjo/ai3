@@ -82,6 +82,9 @@ const MyGallery = () => {
         setImgAlt(alt),
         setImgId(id),
         setModal(!modal);
+
+        const portal = document.querySelector('#portal')
+        portal.classList.remove('display-none')
     }
 
     return (
